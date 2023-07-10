@@ -1,5 +1,11 @@
-class MobileAppUsers {
+class IMobileAppUsers{
+  getNews(){}
+  updateNews(news){}
+}
+
+class MobileAppUsers extends IMobileAppUsers {
     constructor(name, news = "Today is a nice weather") {
+      super()
       this.news = news;
       this.name = name;
     }

@@ -1,5 +1,12 @@
-class Publishers {
+class IPublisher{
+  addSubscriber(subscriber){}
+  removeSubscriber(subscriber){}
+  notifySubscribers(news){}
+}
+
+class Publishers extends IPublisher{
     constructor() {
+      super()
       this.subscribers = [];
     }
   
